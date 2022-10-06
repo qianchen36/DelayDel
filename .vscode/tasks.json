@@ -1,0 +1,38 @@
+{
+    "tasks": [
+        {
+            "label": "CMake: 生成活动文件",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "dependsOn":["make"],
+        },
+
+        {
+            "type":"shell",
+            "label": "make",
+            "command": "mingw32-make",
+            "args": [
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "dependsOn":["cmake"]
+
+        },
+
+        {
+            "type":"shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                "-G \"MinGW Makefiles\"",
+                ".."
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}

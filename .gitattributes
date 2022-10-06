@@ -1,0 +1,4 @@
+# C Files
+*.h         eol=crlf
+*.c         eol=crlf
+
