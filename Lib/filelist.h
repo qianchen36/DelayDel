@@ -17,6 +17,9 @@
 #include <string.h>
 
 
+#ifndef __FILELIST_H__
+#define __FILELIST_H__
+
 /**
  * @brief FileList Node
  * 
@@ -38,3 +41,5 @@ int filelist_add(filelist *_handler);
 int filelist_del(filelist *_handler, int _index);
 int filelist_free(filelist *_handler);
 int filelist_edit(filelist *_handler, int _index, struct _finddata_t *filedata, char *_path);
+
+#endif
