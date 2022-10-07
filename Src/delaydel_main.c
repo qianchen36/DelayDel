@@ -13,7 +13,7 @@
 #include "delaydel_main.h"
 
 
-int main(int argc, char *argv[])
+int main(int argc, const char *argv[])
 {
     // Console Init
     system("cls");
