@@ -2,7 +2,7 @@
  * @file delaydel_main.h
  * @author qianchen
  * @brief 
- * @version 0.1
+ * @version 1.0
  * @date 2022-10-07
  * 
  * @copyright qianchen.org.cn Copyright (c) 2022
@@ -15,3 +15,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <pthread.h>
+
+#include "filelist.h"
